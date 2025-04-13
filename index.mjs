@@ -92,7 +92,7 @@ onValue(ref(db, "Admin"), (data) => {
         } else {
           pasTemoin = true;
           pseudoAdv = Object.keys(Duels[numDuel]);
-          pseudoAdv.pop(pseudo);
+          pseudoAdv.splice(pseudoAdv.indexOf(pseudo), 1);
           pseudoAdv = pseudoAdv[0];
           ctx.strokeText(pseudoAdv, 350, 90);
         }
